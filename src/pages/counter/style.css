@@ -1,0 +1,67 @@
+.background2 {
+  background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  z-index: 100;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.counter-card {
+  width: 50%;
+  height: 70%;
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  font-size: 80px;
+  color: white;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.counter-button {
+  padding: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 25px;
+  transition: all 0.1s ease-out;
+}
+.counter-button:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.hero h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}

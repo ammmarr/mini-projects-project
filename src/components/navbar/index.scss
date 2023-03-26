@@ -1,0 +1,123 @@
+.nav-container {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 8%;
+    font-weight: 500;
+    width: 0vw;
+    height: 100vh;
+    box-shadow: rgb(31, 30, 30) 0px 2px 2px 0px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 100;
+
+
+
+
+
+
+    .nav-links {
+        color: black;
+
+        .nav-item {
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            font-size: 1rem;
+            line-height: 21px;
+            margin: 2px 0px;
+            cursor: pointer;
+            transition: all 0.1s ease-out;
+            padding-left: 10%;
+            border-bottom: 1px solid black;
+
+            &:hover {
+                transform: scale(1.05);
+                text-shadow: 2px 1px 2px rgba(159, 159, 159, 0.3),
+                    0px -2px 2px rgba(255, 255, 255, 0.3);
+            }
+
+
+            p {
+                font-size: 0px;
+            }
+
+            .icon {
+                width: 100%;
+                margin: 0px 5% 0px 0%;
+                filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 0.259));
+                transition: all 0.5s ease-out;
+
+
+
+            }
+
+        }
+    }
+}
+
+.menu-icon-container {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    min-width: fit-content;
+    width: 3%;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.menu-icon-container-open {
+    min-width: 48px;
+    width: 10%;
+
+}
+
+.nav-open {
+    width: 10vw;
+
+    .menu-icon-container {
+        justify-content: end;
+    }
+
+    .nav-item {
+        p {
+            font-size: 1rem !important;
+        }
+
+        .icon {
+            width: 8% !important
+        }
+
+    }
+
+    .logo {
+        opacity: 1 !important;
+        width: 80% !important;
+        display: block;
+        margin: 3% 0px;
+    }
+
+    .logo-user {
+        height: fit-content;
+        opacity: 1;
+    }
+
+    .user-image {
+        margin: 6% 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu-icon-container-open{
+        width: 40vw;
+    }
+   .nav-open{
+    width: 40vw;
+   }
+}

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "bold";   /*Can be any text*/
+  src: url("./assets/fonts/steelfish-bd.otf")
+    format("truetype");
+}
+@font-face {
+  font-family: "light";   /*Can be any text*/
+  src: url("./assets/fonts/steelfish-eb.otf")
+    format("truetype");
+}
+
+:root,body,*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "light",sans-serif;
+}
+.date{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: wheat;
+  color: white;
+}

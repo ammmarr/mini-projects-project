@@ -1,0 +1,45 @@
+
+.markdown-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.markdown-h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 400;
+}
+.main-markdown{
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}.ss{
+  background-color: rgb(255, 255, 255);
+  color: black !important;
+}
+#editor {
+  background-color: white;
+  width: 30vw;
+  height: 40vh;
+  padding: 20px;
+  margin: 0px 20px;
+  color: black;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#preview {
+  background-color: white;
+  width: 40vw;
+  padding: 30px;
+  color: black;
+
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+#preview img {
+  max-width: 300px;
+}

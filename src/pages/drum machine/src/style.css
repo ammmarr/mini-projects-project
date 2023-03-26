@@ -1,0 +1,39 @@
+
+.drum-pads{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drum-pad {
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    width: 55px;
+    height: 55px;
+    border: none;
+    background: rgb(214, 214, 214);
+    box-shadow: 0 0 1px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 15px;
+    margin-left: 5px;
+    outline: none;
+    border-radius: 20%;
+    color: #0D324D;
+    font-size: 30px;
+  }
+  .drum-pad:active {
+    box-shadow: 1px 1px 2px #fd0c99, 1px 1px 2px #ff00dd;
+  }

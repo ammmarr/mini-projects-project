@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,600;1,100;1,200&family=Raleway:wght@200;600&family=Roboto+Mono:wght@100;200;300&display=swap');
+
+.weather-background{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.city-input{
+   display: flex;
+  width:40%;
+   
+
+}
+.city-input-name{
+    border: rgb(75, 71, 71) 1px solid;
+    flex:2;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size:15px;
+    background-color: rgba(0, 0, 0, 0.036);
+    backdrop-filter: blur(10px) ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+form button{
+    border: rgb(77, 77, 77) 1px solid;
+    flex: 1;
+    height: 40px;
+    align-self: center;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor:pointer;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    height: 70vh;
+    background-color: #00000035;
+    backdrop-filter: blur(7px);
+    width: 60vw;
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: -100px;
+    border: 1px solid white;
+}
+.top-display{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-display{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.details span{
+    color: white;
+}
+.icon{
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+.icon img{
+    object-fit: cover;
+    width: 100%;
+}
+.icon-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.icon-description p {
+    text-align: center;
+}
+.main-temp-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.name{
+    font-weight: 500;
+    font-size: 5vw !important;
+    text-size-adjust: auto ;
+}
+.main-temp-h2{
+    color: white !important;
+    font-weight: 100;
+}
+.high-low{
+    display: flex;
+    gap: 20%;
+}
+@media  screen and (max-width:653px) {
+   .name{
+    font-size: 40px !important;
+   }
+    .top-display{
+        flex-direction: column;
+    }
+    .city-input{
+        width: 80%;
+    }
+}
